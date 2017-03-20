@@ -1,7 +1,6 @@
-solveMeFirst a b = a + b
-
-main = do
-    val1 <- readLn
-    val2 <- readLn
-    let sum = solveMeFirst val1 val2
-    print sum
+defmodule Solution do
+#Enter your code here. Read input from STDIN. Print output to STDOUT
+    {a, _} = IO.read(:line) |> Integer.parse
+    {b, _} = IO.read(:line) |> Integer.parse
+    IO.write(a + b)
+end
